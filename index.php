@@ -18,8 +18,9 @@
             </div>
             <?php 
                 foreach ($json as $key):
+                    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
             ?>
-            <a href="<?=str_replace('BASEURL',$_SERVER['SERVER_NAME'],$key->url)?>" class="item toggle hidden"><?=$key->name?></a>
+            <a href="<?=str_replace('BASEURL',$protocol.$_SERVER['SERVER_NAME'],$key->url)?>" class="item toggle hidden"><?=$key->name?></a>
             <?php 
                 endforeach
             ?>
@@ -44,8 +45,9 @@
             </div>
                 <?php 
                     foreach ($json as $key):
+                        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
                 ?>
-                <a href="<?=str_replace('BASEURL',$_SERVER['SERVER_NAME'],$key->url)?>" class="item"><?=$key->name?></a>
+                <a href="<?=str_replace('BASEURL',$protocol.$_SERVER['SERVER_NAME'],$key->url)?>" class="item"><?=$key->name?></a>
                 <?php endforeach ?>
         </div>
         <div class="item-right">
