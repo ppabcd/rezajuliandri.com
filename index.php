@@ -19,7 +19,7 @@
             <?php 
                 foreach ($json as $key):
             ?>
-            <a href="<?=str_replace('BASEPATH',$_SERVER['SERVER_NAME'],$key->url)?>" class="item toggle hidden"><?=$key->name?></a>
+            <a href="<?=str_replace('BASEURL',$_SERVER['SERVER_NAME'],$key->url)?>" class="item toggle hidden"><?=$key->name?></a>
             <?php 
                 endforeach
             ?>
@@ -45,17 +45,17 @@
                 <?php 
                     foreach ($json as $key):
                 ?>
-                <a href="<?=str_replace('BASEPATH',$_SERVER['SERVER_NAME'],$key->url)?>" class="item"><?=$key->name?></a>
+                <a href="<?=str_replace('BASEURL',$_SERVER['SERVER_NAME'],$key->url)?>" class="item"><?=$key->name?></a>
                 <?php endforeach ?>
         </div>
         <div class="item-right">
             <div class="social">
-                <a href="" class="item social">
+                <a href="https://www.facebook.com/ppabcd" class="item social">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="item social">
+                <a href="https://github.com/ppabcd" class="item social">
                     <i class="fab fa-github"></i>
-                <a href="" class="item social">    
+                <a href="https://linkedin.com/in/rezajuliandri" class="item social">    
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
