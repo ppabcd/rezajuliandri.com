@@ -9,5 +9,4 @@ script:
 - git config git-ftp.password "$FTP_PASS"
 - git add *
 - git status
-- git commit -m 'Add Files'
 - git ftp push
