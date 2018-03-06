@@ -68,7 +68,10 @@
         </div>
         <div class="content-data">
             <div class="container">
-                <h1>Hello</h1>
+                <h1>Reza Juliandri Site</h1>
+                <p>
+                    This website under maintenance.
+                </p>
             </div>
         </div>
     </div>
