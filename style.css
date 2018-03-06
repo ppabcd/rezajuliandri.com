@@ -150,7 +150,7 @@ header .container .item-right{
 }
 
 .slider {
-    height:400px;
+    max-height:400px;
     overflow-y: hidden;
 }
 .content{
