@@ -28,12 +28,12 @@
                 <div class="toggle-d">
                         <button class="btn btn-toggle">&#9776;</button>
                 </div>
-                 <a href="" class="item social toggle hidden"><i class="fab fa-facebook-f"></i>
+                 <a href="https://www.facebook.com/ppabcd" class="item social toggle hidden"><i class="fab fa-facebook-f"></i>
                     </a>
-                <a href="" class="item social toggle hidden">
+                <a href="https://github.com/ppabcd" class="item social toggle hidden">
                         <i class="fab fa-github"></i>
                 </a>
-                <a href="" class="item social toggle hidden">    <i class="fab fa-linkedin-in"></i>
+                <a href="https://linkedin.com/in/rezajuliandri" class="item social toggle hidden">    <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
         </div>
@@ -52,7 +52,7 @@
         </div>
         <div class="item-right">
             <div class="social">
-                <a href="https://www.facebook.com/ppabcd" class="item social">
+                <a href="https://fb.me/ppabcd" class="item social">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="https://github.com/ppabcd" class="item social">
