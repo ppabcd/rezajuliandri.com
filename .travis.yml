@@ -7,4 +7,6 @@ script:
 - git config git-ftp.url "$FTP_SERVER"
 - git config git-ftp.user "$FTP_USER"
 - git config git-ftp.password "$FTP_PASS"
+- git add .
+- git commit -m 'Add Files'
 - git ftp push
