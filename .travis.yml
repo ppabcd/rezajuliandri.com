@@ -1,6 +1,7 @@
 language: php
 
 install:
+- sudo apt-get install git
 - sudo apt-get install git-ftp
 
 script:
@@ -9,4 +10,5 @@ script:
 - git config git-ftp.password "$FTP_PASS"
 - git add *
 - git status
+- git ftp init
 - git ftp push
