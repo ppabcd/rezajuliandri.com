@@ -17,7 +17,7 @@
                 <a href="#logo">Reza Juliandri</a>
             </div>
             <?php 
-                foreach ($json as $key):
+                foreach ($json->menu as $key):
                     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
             ?>
             <a href="<?=str_replace('BASEURL',$protocol.$_SERVER['SERVER_NAME'],$key->url)?>" class="item toggle hidden"><?=$key->name?></a>
@@ -44,7 +44,7 @@
                 Navigation
             </div>
                 <?php 
-                    foreach ($json as $key):
+                    foreach ($json->menu as $key):
                         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
                 ?>
                 <a href="<?=str_replace('BASEURL',$protocol.$_SERVER['SERVER_NAME'],$key->url)?>" class="item"><?=$key->name?></a>
@@ -52,14 +52,15 @@
         </div>
         <div class="item-right">
             <div class="social">
-                <a href="https://fb.me/ppabcd" class="item social">
-                    <i class="fab fa-facebook-f"></i>
+                <?php  
+                    foreach($json->social as $key):
+                ?>
+                <a href="<?=$key->url?>" class="item social">
+                    <i class="<?=$key->icon?>"></i>
                 </a>
-                <a href="https://github.com/ppabcd" class="item social">
-                    <i class="fab fa-github"></i>
-                <a href="https://linkedin.com/in/rezajuliandri" class="item social">    
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                <?php 
+                    endforeach;
+                 ?>
             </div>
         </div>
     </nav>
@@ -72,7 +73,7 @@
             <div class="container">
                 <h1>Reza Juliandri Site</h1>
                 <p>
-                    This website under maintenance.
+                    This website under maintenance. We will back soon.
                 </p>
             </div>
         </div>

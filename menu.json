@@ -1,7 +1,1 @@
-[
-    {"url":"BASEURL","name":"Home"},
-    {"url":"BASEURL\/about","name":"About Me"},
-    {"url":"BASEURL\/portofolio","name":"Portofolio"},
-    {"url":"BASEURL\/blog","name":"Blog"},
-    {"url":"BASEURL\/contact","name":"Contact Me"}
-]
+{"menu":[{"url":"BASEURL","name":"Home"},{"url":"BASEURL\/about","name":"About Me"},{"url":"BASEURL\/portofolio","name":"Portofolio"},{"url":"BASEURL\/blog","name":"Blog"},{"url":"BASEURL\/contact","name":"Contact Me"}],"social":[{"icon":"fab fa-facebook-f","name":"facebook","url":"https:\/\/fb.me\/ppabcd"},{"icon":"fab fa-github","name":"github","url":"https:\/\/github.com\/ppabcd"},{"icon":"fab fa-linkedin-in","name":"linkedin","url":"https:\/\/linkedin.com\/in\/rezajuliandri"}]}
